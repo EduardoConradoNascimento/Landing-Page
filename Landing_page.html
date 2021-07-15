@@ -9,10 +9,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <style>
+        .txtNome {
+            box-sizing: border-box;
+            border: 2px solid rgb(150, 150, 150);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("Images/Pessoa_Icone-removebg-preview.png");
+            background-position: -10px ; 
+            background-repeat:no-repeat;
+            background-size: 50px;
+            padding: 12px 20px 12px 40px;
+            width: 87%;
+
+          }
+        .txtEmail{
+            width: 87%;
+            box-sizing: border-box;
+            border: 2px solid rgb(150, 150, 150);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("Images/561127-removebg-preview.png");
+            background-position: -10px ; 
+            background-repeat:no-repeat;
+            background-size: 50px;
+            padding: 12px 20px 12px 40px;
+          }
+        .body{
+        background-image: url(Images/Tech_Bg.jpg);
+        }
         .card{
             display:flex;
             flex-direction: column;
             align-items: center;
+            background-color: rgb(140, 180, 160);
+            position: fixed;
+            bottom: 25%;
+            right: 230px; 
+            z-index: 2;
+            height: 400px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
         }
         .product-name{
             text-align: center;
@@ -33,11 +72,6 @@
         .E-mail{
             font-size: 15px;
         }
-        .txtEmail{
-            margin: 5px;
-            border-style:double;
-            border-color: #333;
-        }
         .btnEmail{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 16px;
@@ -53,9 +87,51 @@
             cursor: pointer;
             background-color: #333;
             color: #fff;
-        } 
+        }
+        .Information{
+            display:flex;
+            flex-direction: column;
+            border-radius: 15px;
+            border: 3px solid rgb(50, 50, 50);
+            background-color: rgb(150, 190, 180);
+            position: fixed;
+            top: 50px;
+            bottom: 50px;
+            right: 180px ;
+            flex-grow: 26px;
+            height: 650px;
+            width: 1150px;
+            z-index: 1;
+        }
+        .divEsquerda{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            bottom: 18%;
+            left: 12%; 
+            z-index: 2;
+            width: 600px;
+            height: 500px;
+            justify-content: center;
+
+        }
+        .NaoP{
+            font-family: 'Oswald', sans-serif;
+            font-size: 50px;
+        }
+        .Ablack{
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+        }
+        .Logo_Gama{
+            height: 25%;
+            width: 25%;
+            position: fixed;
+            top:18px;
+            left: 50px;
+        }
         div {
-                border: 1px solid black;
                 width: 300px;
             }
             img {
@@ -64,16 +140,21 @@
     </style>
 </head>
 
-<body>
+<body class = "body">
     <div class = 'card'>
-        <h2 class= 'Titulo'>Promoção Imperdível!</h2>
-        <h3 class='product-name'>Celular Samsung Galaxy A-02-S 32GB Dual</h3>
-        <img 
-            src="Images/052ae7ff8a008d1e9724c2b6e9f71862.jpg">
-        <span class= "Preço">Somente R$ 999,90 em 1x no cartão ou boleto</span>
-        <label class = "E-mail" for="Campotxt"> Cadastre E-mail para receber mais promoções: </label>
-        <input class = "txtEmail" type="text" name="E-mail", id="txtEmail">
+        <h2 class= 'Titulo'>Cadastre-se Agora!</h2>
+        <h3 class='product-name'>Ensira seu E-mail e Nome completo para receber todas as melhores promoções </h3>
+        <input class = "txtNome" type="text" name="txtNome", id="txtNome", placeholder="Nome Completo...">
+        <input class = "txtEmail" type="text" name="txtEmail", id="txtEmail", placeholder="E-mail...">
         <button onclick="alert('E-mail Cadastrado!')" class = "btnEmail"> Receber Promoções! </button>
+    </div>
+    <div class = "Information">  
+         <img class = Logo_Gama src="/Css/Images/MARCA__CMYK__GAMA-ACADEMY__COR__HORIZONTAL.png" alt="">
+    </div>
+    <div class= "divEsquerda" >
+        
+        <h1 class= "NaoP">Não fique fora dessa!</h1>
+        <h3 class = "Ablack"> A Black Friday chegou e estamos dando até 80% de desconto em todos os produtos da loja, não perca essa oportunidade!</h3>
     </div>
 </body>
 </html>

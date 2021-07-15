@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção Balck Fryday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        .card{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-name{
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px;
+        }
+        .Titulo{
+            font-family: 'Oswald', sans-serif;
+            font-size: 26px;
+        }
+        .Preço{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 17px;
+            margin: 10px;
+            text-align: center;
+        }
+        .E-mail{
+            font-size: 15px;
+        }
+        .txtEmail{
+            margin: 5px;
+            border-style:double;
+            border-color: #333;
+        }
+        .btnEmail{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 15px;
+            padding: 7px;
+            margin: 5px ;
+            background-color: #fff;
+            border: 2px solid rgb(12, 11, 11);
+            transition:0.3s;
+        }
+        .btnEmail:hover{
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+        } 
+        div {
+                border: 1px solid black;
+                width: 300px;
+            }
+            img {
+                width:200px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class = 'card'>
+        <h2 class= 'Titulo'>Promoção Imperdível!</h2>
+        <h3 class='product-name'>Celular Samsung Galaxy A-02-S 32GB Dual</h3>
+        <img 
+            src="Images/052ae7ff8a008d1e9724c2b6e9f71862.jpg">
+        <span class= "Preço">Somente R$ 999,90 em 1x no cartão ou boleto</span>
+        <label class = "E-mail" for="Campotxt"> Cadastre E-mail para receber mais promoções: </label>
+        <input class = "txtEmail" type="text" name="E-mail", id="txtEmail">
+        <button onclick="alert('E-mail Cadastrado!')" class = "btnEmail"> Receber Promoções! </button>
+    </div>
+</body>
+</html>

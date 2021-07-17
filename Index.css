@@ -1,0 +1,138 @@
+.txtNome {
+    box-sizing: border-box;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("Images/Pessoa_Icone-removebg-preview.png");
+    background-position: -10px ; 
+    background-repeat:no-repeat;
+    background-size: 50px;
+    padding: 12px 20px 12px 40px;
+    width: 87%;
+
+  }
+.txtEmail{
+    width: 87%;
+    box-sizing: border-box;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("Images/561127-removebg-preview.png");
+    background-position: -10px ; 
+    background-repeat:no-repeat;
+    background-size: 50px;
+    padding: 12px 20px 12px 40px;
+  }
+.body{
+background-image: url(Images/Tech_Bg.jpg);
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(140, 180, 160);
+    position: fixed;
+    bottom: 25%;
+    right: 230px; 
+    z-index: 2;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+.product-name{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+.Titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+}
+.Preço{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    margin: 10px;
+    text-align: center;
+}
+.E-mail{
+    font-size: 15px;
+}
+.btnEmail{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 15px;
+    padding: 7px;
+    margin: 5px ;
+    background-color: #fff;
+    border: 2px solid rgb(12, 11, 11);
+    transition:0.3s;
+}
+.btnEmail:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+.Information{
+    display:flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 3px solid rgb(50, 50, 50);
+    background-color: rgb(150, 190, 180);
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    right: 180px ;
+    flex-grow: 26px;
+    height: 650px;
+    width: 1150px;
+    z-index: 1;
+}
+.divEsquerda{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 4%;
+    left: 12%; 
+    z-index: 2;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+
+}
+.NaoF{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    position:absolute;
+    top: -5%;
+}
+.Ablack{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    top:3%;
+    position:relative ;
+}
+.Logo_Gama{
+    height: 25%;
+    width: 25%;
+    position: fixed;
+    top:18px;
+    left: 50px;
+}
+.Eletronicos{
+    height: 320px;
+    width: 320px;
+    position: relative;
+
+}
+div {
+        width: 300px;
+    }
+    img {
+        width:200px;
+    }
